@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@+id/download_icon"
+        android:text="Hello Music Item one Hello Music Item one"
+        android:textColor="@color/color_4"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/music_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="03:22"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/music_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@id/download_icon"
+        android:layout_toEndOf="@+id/music_time"
+        android:text="16.80 Mb"
+        android:textAlignment="textEnd"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/download_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_baseline_cloud_download_24" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/music_size"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0.1"
+        android:background="@color/color_4" />
+</RelativeLayout>
